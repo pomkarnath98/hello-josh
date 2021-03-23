@@ -1,0 +1,126 @@
+.third {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.flexbox { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchDiv {
+    padding: 10px;
+    background-color: #F5F5F7;
+    border-radius: 8px;
+    position: relative;
+    & > img {
+        position: absolute;
+        bottom: 9px;
+    }
+    & input {
+        margin-left: 30px;
+        background-color: #F5F5F7;
+        border: none;
+        outline: none;
+    }
+    & ~ .notification {
+        position: relative;
+        padding: 5px;
+        margin-left: 30px;
+        & img {
+            width: 20px;
+        }
+        & div {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color: white;
+            border-radius: 50%;
+            background-color: red;
+            padding: 2px 4px;
+            font-size: 6px;
+        }
+    }
+    & ~ .profile {
+        & :first-child {
+            margin-left: 30px;
+            width: 30px;
+            border-radius: 5px;
+        }
+        & :last-child {
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.courseDetails {
+    & .flexbox {
+        margin-top: 20px;
+        padding: 5px 25px;
+        background: #F5F5F7;
+        border-radius: 14px;
+        & div {
+            text-align: left;
+            font-size: 12px;
+        }
+    }
+    & :first-child {
+        margin-right: 10px;
+    }
+    & h1 {
+        margin: 0;
+        font-weight: 900;
+        font-size: 50px;
+    }
+}
+
+.statistics {
+    & h3 {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    & h5 {
+        color: rgb(172, 172, 172);
+        margin-right: 30px;
+    }
+    & .allCourses {
+        color: black;
+    }
+    & b {
+        font-size: 12px;
+    }
+    & > :nth-child(2) {
+        & > :last-child {
+            background-color: #F5F5F7;
+            border-radius: 8px;
+            padding: 5px 8px;
+            & img {
+                padding: 0px;
+                padding-left: 5px;
+                margin-bottom: 1px;
+            }
+        }
+    }
+}
+
+.learnMore {
+    margin-top: 10px;
+    border-radius: 14px;
+    background-color: #F5F5F7;
+    padding: 20px;
+    text-align: left;
+    & h2 {
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+    & button {
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
